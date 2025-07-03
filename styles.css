@@ -1,0 +1,1264 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Caprasimo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+ 
+
+}
+
+
+.wrapper{
+  /* position: absolute; */
+  /* transform: scale(0.67); */
+    width: 100%;
+    /* overflow-x: hidden; */
+  
+    
+
+}
+
+.container{
+  
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+   
+}
+.navigation-bar{
+  position: sticky;
+  
+    display: flex;
+     transform: scale(0.67);
+    
+
+}
+.nav-left img{
+  position: absolute;
+    width: 75px;
+    top:0rem;
+    left: -20rem;
+    user-select: none;
+}
+
+.nav-left p{
+    position: relative;
+    font-size: 25px;
+    top: 1.2rem;
+    left: -16.5rem;
+     font-family: "Be Vietnam Pro", sans-serif;
+}
+.nav-left{
+    position: relative;
+    left: 500px;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+/* .nav-right{
+ 
+    position: absolute;
+    left: 1200px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-right a{
+    padding: rem;
+    margin: 1rem;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+   font-family: "Be Vietnam Pro", sans-serif;
+   gap: 3rem;
+  
+} */
+
+/* .nav-right a:hover{
+   font-weight: bold;
+    transition: 5s ease ;
+  } */
+
+.nav-right{
+  position: absolute;
+  left: 35rem;
+  top: 1rem;
+  width: 100vw;
+}
+.nav-right ul{
+list-style: none;
+position: absolute;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+left: 8rem;
+gap: 0;
+
+}
+.nav-right ul a{
+  text-decoration: none;
+  padding: 5rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: black;
+}
+
+  .hero-left{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 40px;
+    top: 6rem;
+    left: 0rem;
+    transform: scale(0.67);
+    
+    justify-content: center;
+  }
+  .hero div{
+    padding: 1.5rem;
+  }
+
+  .heading{
+    position: relative;
+     font-family: "Be Vietnam Pro", sans-serif;
+     font-size: 4rem;
+     color: rgba(0, 0, 0, 0.752);
+  }
+  .sub-heading{
+    position: relative;
+     font-family: "Be Vietnam Pro", sans-serif;
+     font-size: 4rem;
+     color: rgba(0, 0, 0, 0.752);
+  }
+
+  .para{
+ font-family: "Be Vietnam Pro", sans-serif;
+ font-size: 1.5rem;
+  }
+  .role{
+    color: rgb(104, 58, 188);
+  }
+  .button{
+    position: relative;
+    display: inline-flex;
+    padding: 2rem;
+    border: 2px solid black;
+    background-color: rgb(197, 56, 56);
+    color: white;
+        font-family: "Be Vietnam Pro", sans-serif;
+        margin: 1rem;
+        top: 1rem;
+        width: 10rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 15px black;
+        
+  }
+  .button p{
+    position: absolute;
+    z-index: 2;
+    user-select: none;
+    font-weight: bold;
+  }
+  
+  
+
+  .button::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: 1;
+    transition: all 1s ease ;
+ }
+
+ .button:hover::before{
+  color: black;
+  transform: scaleX(1);
+  transform: translateX(2);
+  
+  
+ }
+ .button:hover{
+  cursor: pointer;
+  color: black;
+ }
+ .hero{
+  display: flex;
+ }
+
+ .user-img img{
+  position: absolute;
+  top: 20rem;
+  right: 24rem;
+  padding: 3rem;
+  
+  animation: user 5s  infinite;
+ 
+ }
+ 
+ 
+
+ @keyframes user {
+  0%{
+    filter: grayscale(0);
+    
+  }
+
+  50%{
+    filter: grayscale(1);
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px black;
+  
+
+  }
+
+  100%{
+    filter: grayscale(0);
+  }  
+  
+ }
+
+ .dots img{
+  position: absolute;
+  top: 48rem;
+  right: 24rem;
+  animation: dots 6s infinite;
+ }
+
+ @keyframes dots {
+
+  0%{
+    transform: translateY(0);
+  }
+
+  50%{
+transform: translateY(1.5rem);
+  }
+
+  100%{
+transform: translateY(0);
+  }
+  
+ }
+
+ .zigzags img{
+  position: absolute;
+  top: 20rem;
+  right: 49rem;
+  animation: zigzags  5s ease infinite;
+ }
+ @keyframes zigzags {
+  0%{
+transform: translateX(0);
+  }
+
+  50%{
+transform: translateX(-2rem);
+  }
+
+  100%{
+transform: translateX(0);
+  }
+
+
+ }
+.cube{
+  position: absolute;
+  top: 20rem;
+  right: 24rem;
+  transform: rotatez('360');
+  animation: cube 5s infinite;
+}
+@keyframes cube {
+  0%{
+    transform: translateY(0) rotateY(0deg);
+    
+  }
+
+  50%{
+    transform: translateY(-2rem) rotateY(360deg);
+  }
+
+  100%{
+    transform: translateY(0) rotateY(0deg);
+  }
+}
+
+.plus{
+  position: absolute;
+  top: 17rem;
+  right: 35rem;
+  animation: plus 5s infinite;
+}
+
+@keyframes plus{
+  0%{
+    transform: translateY(0) ;
+    
+  }
+
+  50%{
+    transform: translateY(2rem);
+  }
+
+  100%{
+    transform: translateY(0) ;
+  }
+}
+
+.circle{
+  position: absolute;
+  top: 47rem;
+  right: 47rem;
+  animation: circle 5s  infinite;
+}
+
+@keyframes circle {
+  0%{
+    transform: translate(0);
+  }
+
+  50%{
+transform: translate(-1.5rem);
+  }
+
+  100%{
+transform: translate(0);
+  }
+}
+
+.name{
+  
+ 
+  position: absolute;
+  
+  font-size: 10rem;
+ font-family: "Be Vietnam Pro", sans-serif;
+ font-weight: bolder;
+ color: rgba(0, 0, 0, 0.353);
+ user-select: none;
+ top: 38rem;
+ left: 0rem;
+ transform: scale(0.67);
+}
+
+.hero-right{
+  position:absolute;
+  left: 89rem;
+  bottom: 32rem;
+  /* bottom: 60rem; */
+  opacity: 1;
+  transform: scale(0.67);
+}
+
+.container2{
+  position: relative;
+  
+  background-color: rgba(128, 128, 128, 0.567);
+  height: 250rem;
+  
+ 
+}
+
+ .heading2{
+  
+  position: relative;
+  top: 2rem;
+  left: 25%;
+  font-size: 8rem;
+   font-family: "Be Vietnam Pro", sans-serif;
+   color: rgba(211, 52, 52, 0.868);
+   transform: scale(0.87);
+   font-weight: bold;
+  filter:drop-shadow(3px 3px 8px rgb(101, 100, 100));
+}
+.projects{
+  position: absolute;
+ transform: scale(0.67);
+  
+}
+
+.background{
+ box-shadow: 15px 15px 40px black;
+ border-radius: 10px;
+  background-image: url(projects/Project1.png);
+  background-size: cover;
+  /* background-position: center; */
+ 
+  position: absolute;
+  z-index: 0;
+  top: 9rem;
+left: 20rem;
+  height:45rem;
+  width: 91rem;
+  filter: brightness(0.20);
+ 
+ 
+}
+.no-1 p{
+  position: absolute;
+  z-index: 2;
+  width: 50px;
+  height: 50px
+   
+}
+
+.background::before{
+  position: absolute;
+  content: "";
+  background-color: blueviolet;
+  opacity: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transition: 1s;
+  transform-origin: left;
+ 
+  
+  
+}
+
+.project1:hover .background::before{
+  transform: scaleX(1);
+
+ 
+}
+.project1:hover .p-1-content{
+  transform: scale(1.02);
+}
+.project1:hover .no-1{
+  opacity: 100%;
+}
+.no-1{
+  position: absolute;
+    top: 4rem;
+    left: 95rem;
+    color: white;
+    font-size: 20rem;
+    opacity: 0;
+    transition: opacity 1s ; 
+    box-shadow: 5px 5px 15px black;
+    user-select: none;
+    
+    
+    
+  }
+
+.p-1-content{
+  display: flex;
+  pointer-events: auto;
+  
+  transition: 1.5s ease;
+  /* flex-direction: column; */
+}
+
+.p-1-icons{
+  pointer-events: none;
+  position: absolute;
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+  left: 26rem;
+  top: 23rem;
+}
+.p-1-color p{
+  pointer-events: none;
+  position: relative;
+  left: 26rem;
+  top: 30rem;
+  color: white;
+  font-size: 5rem;
+}
+.p-1-para p {
+  pointer-events: none;
+  font-size: 1.5rem;
+  font-style: italic;
+  position: relative;
+  color: white;
+  top: 37rem;
+  left:-5rem
+  
+}
+.readmore{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+  top: 44rem;
+  left: 26rem;
+  user-select: none;
+    font-weight: bold;
+    background-color: rgb(194, 67, 67);
+    padding: 2rem;
+    width: 10rem;
+    z-index: 3;
+}
+
+.readmore:before{
+   content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: -1;
+    transition: all 1s ease ;
+}
+ .readmore:hover::before{
+  color: black;
+  transform: scaleX(1);
+  transform: translateX(2);
+  
+  
+ }
+ .readmore:hover{
+  cursor: pointer;
+  color: black;
+ }
+
+ .background2{
+   box-shadow: 15px 15px 40px black;
+    border-radius: 10px;
+
+  background-image: url(projects/Project2.png);
+  background-size: cover;
+  /* background-position: center; */
+ 
+  position: absolute;
+  z-index: 0;
+  top: 70rem;
+left: 30rem;
+  height:45rem;
+  width: 91rem;
+  filter: brightness(0.20);
+ }
+
+
+ .background2::before{
+  position: absolute;
+  content: "";
+  background-color: blueviolet;
+  opacity: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transition: 1s;
+  transform-origin: left;
+ 
+ }
+
+ .project2:hover .background2::before{
+  transform: scaleX(1);
+
+ 
+}
+
+
+.p-2-content{
+  display: flex;
+  pointer-events: auto;
+  
+  transition: 1.5s ease;
+  /* flex-direction: column; */
+  position: relative;
+}
+
+.p-2-icons {
+  pointer-events: none;
+  position: absolute;
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+  left: 66rem;
+  top: 78rem;
+}
+.p-2-color p{
+  pointer-events: none;
+  position: relative;
+  left: 64rem;
+  top: 85rem;
+  color: white;
+  font-size: 5rem;
+}
+
+.p-2-para p {
+  pointer-events: none;
+  font-size:1.8rem;
+  font-style: italic;
+  position: relative;
+  color: white;
+  top: 93rem;
+  left:23rem
+  
+  
+}
+.readmore2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+  top: 100rem;
+  left: 65rem;
+  user-select: none;
+    font-weight: bold;
+    background-color: rgb(194, 67, 67);
+    padding: 2rem;
+    width: 10rem;
+    z-index: 3;
+}
+
+.project2:hover .p-2-content{
+  transform: scale(1.01);
+}
+.project2:hover .no-2{
+  opacity: 100%;
+}
+
+.no-2{
+  position: absolute;
+    top: 65rem;
+    left:29.5rem;
+    color: white;
+    font-size: 20rem;
+    opacity: 0;
+    transition: opacity 1s ; 
+   
+    user-select: none;
+    
+    
+    
+  }
+
+  .readmore2:before{
+   content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: -1;
+    transition: all 1s ease ;
+}
+ .readmore2:hover::before{
+  color: black;
+  transform: scaleX(1);
+  transform: translateX(2);
+  
+  
+ }
+ .readmore2:hover{
+  cursor: pointer;
+  color: black;
+ }
+
+  .background3{
+ box-shadow: 15px 15px 40px black;
+  border-radius: 10px;
+
+   background-image: url(projects/Project3.png);
+  background-size: cover;
+  /* background-position: center; */
+ 
+  position: absolute;
+  z-index: 0;
+  top: 130rem;
+left: 20rem;
+  height:45rem;
+  width: 91rem;
+  filter: brightness(0.20);
+ }
+ .background3::before{
+  position: absolute;
+  content: "";
+  background-color: blueviolet;
+  opacity: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transition: 1s;
+  transform-origin: left;
+ 
+ }
+
+ .project3:hover .background3::before{
+  transform: scaleX(1);
+
+ 
+}
+
+.p-3-content{
+  display: flex;
+  pointer-events: auto;
+  
+  transition: 1.5s ease;
+  /* flex-direction: column; */
+  position: relative;
+}
+.p-3-icons {
+  pointer-events: none;
+  position: absolute;
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+  left: 30rem;
+  top: 130rem;
+}
+
+.p-3-color p{
+  pointer-events: none;
+  position: relative;
+  left: 30rem;
+  top: 137.5rem;
+  color: white;
+  font-size: 5rem;
+  
+}
+.p-3-para p {
+  pointer-events: none;
+  font-size:1.8rem;
+  font-style: italic;
+  position: relative;
+  color: white;
+  top: 145rem;
+  left:8rem
+  
+  
+}
+
+.readmore3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+  top: 152rem;
+  left: 30em;
+  user-select: none;
+    font-weight: bold;
+    background-color: rgb(194, 67, 67);
+    padding: 2rem;
+    width: 10rem;
+    z-index: 3;
+}
+.project3:hover .p-3-content{
+  transform: scale(1.01);
+}
+.project3:hover .no-3{
+  opacity: 100%;
+}
+
+.no-3{
+  position: absolute;
+    top: 125rem;
+    left:93rem;
+    color: white;
+    font-size: 20rem;
+    opacity: 0;
+    transition: opacity 1s ; 
+   
+    user-select: none;
+    
+    
+    
+  }
+   .readmore3:before{
+   content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: -1;
+    transition: all 1s ease ;
+}
+ .readmore3:hover::before{
+  color: black;
+  transform: scaleX(1);
+  transform: translateX(2);
+  
+  
+ }
+ .readmore3:hover{
+  cursor: pointer;
+  color: black;
+ }
+
+  .background4{
+   box-shadow: 15px 15px 40px black;
+    border-radius: 10px;
+
+  background-image: url(projects/Project4.png);
+  background-size: cover;
+   background-position: center; 
+ 
+  position: absolute;
+  z-index: 0;
+  top: 190rem;
+left: 30rem;
+  height:45rem;
+  width: 91rem;
+  filter: brightness(0.20);
+ }
+ .background4::before{
+  position: absolute;
+  content: "";
+  background-color: blueviolet;
+  opacity: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transition: 1s;
+  transform-origin: left;
+ 
+ }
+
+ .project4:hover .background4::before{
+  transform: scaleX(1);
+
+ 
+}
+
+.p-4-content{
+  display: flex;
+  pointer-events: auto;
+  
+  transition: 1.5s ease;
+   flex-direction: column; 
+  position: relative;
+}
+.p-4-icons {
+  pointer-events: none;
+  position: absolute;
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+  left: 80rem;
+  top: 187rem;
+}
+.p-4-color p{
+  pointer-events: none;
+  position: relative;
+  left: 80rem;
+  top: 193rem;
+  color: white;
+  font-size: 5rem;
+  
+}
+
+.p-4-para p {
+  pointer-events: none;
+  font-size:1.8rem;
+  font-style: italic;
+  position: relative;
+  color: white;
+  top: 195rem;
+  left:80rem
+  
+  
+}
+.readmore4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+  top: 207rem;
+  left: 80em;
+  user-select: none;
+    font-weight: bold;
+    background-color: rgb(194, 67, 67);
+    padding: 2rem;
+    width: 10rem;
+    z-index: 3;
+}
+.project4:hover .p-4-content{
+  transform: scale(1.01);
+}
+.project4:hover .no-4{
+  opacity: 100%;
+}
+
+.no-4{
+  position: absolute;
+    top: 185rem;
+    left:29.5rem;
+    color: white;
+    font-size: 20rem;
+    opacity: 0;
+    transition: opacity 1s ; 
+   
+    user-select: none;
+    
+    
+    
+  }
+  .readmore4:before{
+   content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: -1;
+    transition: all 1s ease ;
+}
+ .readmore4:hover::before{
+  color: black;
+  transform: scaleX(1);
+  transform: translateX(2);
+  
+  
+ }
+ .readmore4:hover{
+  cursor: pointer;
+  color: black;
+ }
+
+ .container3{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ position: relative;
+  height: 70rem;
+  right: 17rem;
+   transform: scale(0.67);
+
+ }
+
+ .skill-left{
+  position: absolute;
+  top: -13rem;
+  margin: 9rem;
+  padding: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 2.5rem;
+ }
+
+ .skill-head{
+  font-size: 2rem;
+     font-family: "Be Vietnam Pro", sans-serif;
+     color: rgb(194, 67, 67);
+  /* filter:drop-shadow(1px 1px 3px rgb(0, 0, 0)); */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.51);
+
+
+ }
+
+ .skill-para {
+  font-size: 1.5rem;
+       font-family: "Be Vietnam Pro", sans-serif;
+       text-align: justify;
+
+ }
+ .bubble{
+  position: absolute;
+  top: 17rem;
+  left: 90rem;
+  animation: bubble 10s ease infinite;
+ }
+ @keyframes bubble {
+  
+  0%{
+    transform: scale(1) translatex(0) translatey(0);
+  }
+ 50%{
+    transform: scale(1.2) translatex(2rem) translatey(-1rem);
+  }
+  100%{
+    transform: scale(1) translatex(0) translatey(0);
+  }
+ }
+
+
+ .stack{
+  top: 7rem;
+  left: 76rem;
+  position: absolute;
+  width: 55rem;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(4,1fr);
+
+  gap: 5rem;
+ }
+ .stack img{
+  width: 6rem;
+  height: 6rem;
+ }
+  
+ .stack img::before{
+  transform: scale(0);
+ }
+
+ .stack img :hover .stack img::before{
+  transform: scale(1.1);
+ }
+ 
+.container4{
+  
+  padding: 6rem;
+  gap: 5rem;
+  display: flex;
+  flex-direction: column;
+  height: 55rem;
+  width: 100%;
+    background-color: rgba(128, 128, 128, 0.567);
+  
+
+    
+
+}
+.contact {
+filter: drop-shadow(2rem);  font-size: 3rem;
+  position: absolute;
+  top: 370rem;
+  left: 7rem;
+   font-family: "Be Vietnam Pro", sans-serif;
+     color: rgb(194, 67, 67);
+      transform: scale(0.67);
+  filter:drop-shadow(3px 3px 8px rgb(101, 100, 100));
+
+}
+.statement{
+    
+
+  top: 378rem;
+  left: 1rem;
+  position: absolute;
+  font-size: 2rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: rgb(99, 140, 230);
+   transform: scale(0.67);
+   
+
+  
+}
+.form{
+  top: 380em;
+  left: 10rem;
+  position: absolute;
+  gap: 5rem;
+  display:inline-flex;
+  flex-direction: column;
+  border-style: none;
+   transform: scale(0.67);
+
+}
+.form-text {
+  box-shadow: 10px 10px 20px black;
+  padding: 1rem;
+  height: 3rem;
+  border-style: none;
+  width: 50rem;
+}
+.form-email {
+    box-shadow: 10px 10px 20px black;
+
+    height: 3rem;
+padding: 1rem;
+  width: 50rem;
+  border-style: none;
+}
+.form-subject {
+    box-shadow: 10px 10px 20px black;
+
+    height: 3rem;
+padding: 1rem;
+  width: 50rem;
+  border-style: none;
+}
+.form-comments{
+    box-shadow: 10px 10px 20px black;
+
+    height: 15rem;
+padding: 1rem;
+  width: 50rem;
+  border-style: none;
+}
+.skills-text{
+  position: absolute;
+  
+  font-size: 10rem;
+ font-family: "Be Vietnam Pro", sans-serif;
+ font-weight: bolder;
+ color: rgba(0, 0, 0, 0.353);
+ user-select: none;
+ top: 35.663em;
+ left:68rem;
+ 
+}
+
+.send-message{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+  top: 415rem;
+  left: 15em;
+  user-select: none;
+    font-weight: bold;
+    background-color: rgb(194, 67, 67);
+    padding: 2rem;
+    width: 15rem;
+    z-index: 3;
+     transform: scale(0.67);
+
+}
+  .send-message:before{
+   content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: -1;
+    transition: all 1s ease ;
+}
+ .send-message:hover::before{
+  color: black;
+  transform: scaleX(1);
+  transform: translateX(2);
+  
+  
+ }
+ .send-message:hover{
+  cursor: pointer;
+  color: black;
+ }
+ .send-message img{
+  position: relative;
+  left: 1rem;
+  width: 2rem;
+  height: 2rem;
+ }
+
+ .container5{
+  position: relative;
+  top: -5rem;
+  right: 40rem;
+  height: 30rem;
+  width: 200rem;
+  background-color: rgb(18, 18, 100);
+   transform: scale(0.67);
+
+ }
+ .foot-left ul{
+  position: absolute;
+gap: 0rem;
+  display: flex;
+  padding: 7rem;
+  left: 8rem;
+
+ }
+ .foot-left  ul li{
+ list-style: none;
+ 
+ }
+ .foot-left a{
+  position: relative;
+  top: 6rem;
+  left: 6rem;
+text-decoration: none;
+color: white;
+font-size: 2rem;
+ font-family: "Be Vietnam Pro", sans-serif;
+
+padding: 1.5rem;
+ }
+
+ /* .i-1, .i-2 ,.i-3, .i-4, .i-5{
+  width: 1rem;
+  height: 2rem;
+ } */
+  .foot-right{
+
+    position: relative;
+    top: 10.5rem;
+    left: 90rem;
+    width: 3rem;
+    height: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1,1fr);
+    
+  }
+
+
+  .i img{
+    width: 4rem;
+    height: 4rem;
+  }
+
+
+  .foot-name {
+      position:absolute;
+  
+  font-size: 10rem;
+ font-family: "Be Vietnam Pro", sans-serif;
+ font-weight: bolder;
+ color: rgba(0, 0, 0, 0.353);
+ user-select: none;
+ top: 20rem;
+ left: 13rem;
+  }
